@@ -1,0 +1,128 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ec2-user/.nvm/versions/node/v5.3.0/bin/node',
+1 verbose cli   '/home/ec2-user/.nvm/versions/node/v5.3.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'heroku',
+1 verbose cli   'v5.2.20' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData heroku
+8 silly fetchPackageMetaData v5.2.20
+9 silly fetchNamedPackageData heroku
+10 silly mapToRegistry name heroku
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/heroku
+14 silly fetchNamedPackageData v5.2.20
+15 silly mapToRegistry name v5.2.20
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/v5.2.20
+19 verbose request uri https://registry.npmjs.org/heroku
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 4:09:36 AM
+22 verbose request id 4f4e64dab41c8fe2
+23 http request GET https://registry.npmjs.org/heroku
+24 verbose request uri https://registry.npmjs.org/v5.2.20
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 4:09:36 AM
+27 http request GET https://registry.npmjs.org/v5.2.20
+28 http 200 https://registry.npmjs.org/heroku
+29 verbose headers { date: 'Fri, 08 Oct 2021 04:09:36 GMT',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   'transfer-encoding': 'chunked',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'cf-ray': '69ac83c3e88056aa-IAD',
+29 verbose headers   age: '176',
+29 verbose headers   'cache-control': 'public, max-age=300',
+29 verbose headers   etag: 'W/"71b674fdedfbb6428ca25712db1556af"',
+29 verbose headers   'last-modified': 'Mon, 13 Sep 2021 08:29:54 GMT',
+29 verbose headers   vary: 'accept-encoding, accept',
+29 verbose headers   'cf-cache-status': 'HIT',
+29 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+29 verbose headers   'x-amz-replication-status': 'PENDING',
+29 verbose headers   server: 'cloudflare',
+29 verbose headers   'content-encoding': 'gzip' }
+30 silly get cb [ 200,
+30 silly get   { date: 'Fri, 08 Oct 2021 04:09:36 GMT',
+30 silly get     'content-type': 'application/json',
+30 silly get     'transfer-encoding': 'chunked',
+30 silly get     connection: 'keep-alive',
+30 silly get     'cf-ray': '69ac83c3e88056aa-IAD',
+30 silly get     age: '176',
+30 silly get     'cache-control': 'public, max-age=300',
+30 silly get     etag: 'W/"71b674fdedfbb6428ca25712db1556af"',
+30 silly get     'last-modified': 'Mon, 13 Sep 2021 08:29:54 GMT',
+30 silly get     vary: 'accept-encoding, accept',
+30 silly get     'cf-cache-status': 'HIT',
+30 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+30 silly get     'x-amz-replication-status': 'PENDING',
+30 silly get     server: 'cloudflare',
+30 silly get     'content-encoding': 'gzip' } ]
+31 verbose get saving heroku to /home/ec2-user/.npm/registry.npmjs.org/heroku/.cache.json
+32 http 404 https://registry.npmjs.org/v5.2.20
+33 verbose headers { date: 'Fri, 08 Oct 2021 04:09:37 GMT',
+33 verbose headers   'content-type': 'application/json',
+33 verbose headers   'content-length': '21',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'cf-ray': '69ac83c3ed865878-IAD',
+33 verbose headers   vary: 'Accept-Encoding',
+33 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+33 verbose headers   server: 'cloudflare' }
+34 silly get cb [ 404,
+34 silly get   { date: 'Fri, 08 Oct 2021 04:09:37 GMT',
+34 silly get     'content-type': 'application/json',
+34 silly get     'content-length': '21',
+34 silly get     connection: 'keep-alive',
+34 silly get     'cf-ray': '69ac83c3ed865878-IAD',
+34 silly get     vary: 'Accept-Encoding',
+34 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+34 silly get     server: 'cloudflare' } ]
+35 silly fetchPackageMetaData Error: Not found : v5.2.20
+35 silly fetchPackageMetaData     at makeError (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+35 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+35 silly fetchPackageMetaData     at Request._callback (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 silly fetchPackageMetaData     at Request.self.callback (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+35 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+35 silly fetchPackageMetaData     at Request.<anonymous> (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+35 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+35 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+35 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+35 silly fetchPackageMetaData  error for v5.2.20 { [Error: Not found : v5.2.20] pkgid: 'v5.2.20', statusCode: 404, code: 'E404' }
+36 silly rollbackFailedOptional Starting
+37 silly rollbackFailedOptional Finishing
+38 silly runTopLevelLifecycles Starting
+39 silly runTopLevelLifecycles Finishing
+40 silly install printInstalled
+41 verbose stack Error: Not found : v5.2.20
+41 verbose stack     at makeError (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+41 verbose stack     at Request._callback (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/request/request.js:198:22)
+41 verbose stack     at emitTwo (events.js:87:13)
+41 verbose stack     at Request.emit (events.js:172:7)
+41 verbose stack     at Request.<anonymous> (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+41 verbose stack     at emitOne (events.js:82:20)
+41 verbose stack     at Request.emit (events.js:169:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/home/ec2-user/.nvm/versions/node/v5.3.0/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+42 verbose statusCode 404
+43 verbose pkgid v5.2.20
+44 verbose cwd /home/ec2-user/environment/saasapp
+45 error Linux 4.14.246-187.474.amzn2.x86_64
+46 error argv "/home/ec2-user/.nvm/versions/node/v5.3.0/bin/node" "/home/ec2-user/.nvm/versions/node/v5.3.0/bin/npm" "install" "-g" "heroku" "v5.2.20"
+47 error node v5.3.0
+48 error npm  v3.3.12
+49 error code E404
+50 error 404 Not found : v5.2.20
+50 error 404
+50 error 404 'v5.2.20' is not in the npm registry.
+50 error 404 You should bug the author to publish it (or use the name yourself!)
+50 error 404
+50 error 404 Note that you can also install from a
+50 error 404 tarball, folder, http url, or git url.
+51 verbose exit [ 1, true ]
